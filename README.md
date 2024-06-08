@@ -17,7 +17,8 @@
 <p>
 
   
- <picture><img src = "https://github.com/MdAmiruddin/MdAmiruddin/blob/main/Assets/about_me.gif"></picture> &emsp; A Blackhat Person<br/><br/>
+ <picture><img src = "https://github.com/MdAmiruddin/MdAmiruddin/blob/main/Assets/about_me.gif"></picture> 
+ &emsp; A Blackhat Person<br/><br/>
  📧 &emsp; Reach me anytime on discord : canoxed<br/><br/>
 
 </p>
