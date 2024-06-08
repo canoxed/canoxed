@@ -18,8 +18,11 @@
 
   
  <picture><img src = "https://github.com/MdAmiruddin/MdAmiruddin/blob/main/Assets/about_me.gif"></picture> 
+ <br/>
+ <br/>
+ <br/>
  &emsp; A Blackhat Person<br/><br/>
- 📧 &emsp; Reach me anytime on discord : canoxed<br/><br/>
+ &emsp; Reach me anytime on discord : canoxed<br/><br/>
 
 </p>
 
