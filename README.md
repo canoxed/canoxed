@@ -21,7 +21,9 @@
  <br/>
  <br/>
  &emsp; A Blackhat Person<br/><br/>
- &emsp; Reach me anytime on discord : canoxed<br/><br/>
+ &emsp; Reach me anytime on discord/telegram : canoxed<br/><br/>
+ &emsp; You can look at this paste : [canoxed](https://paste.tc/pricelist)<br/><br/>
+ &emsp; My zone records : [canoxed]([https://ownzyou.com/filter/attacker/b7bdb3d195f3cd77ebfac7816a245d9f)<br/><br/>
 
 </p>
 
