@@ -1,0 +1,815 @@
+{
+  "Script": [
+    {
+      "Inst": "ComputedJump",
+      "OffsetExpression": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Int",
+          "PinSubCategory": "Int"
+        },
+        "Variable Name": "EntryPoint"
+      },
+      "StatementIndex": 0
+    },
+    {
+      "Inst": "LetObj",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Object",
+          "PinSubCategory": "Object",
+          "PinSubCategoryObject": "/Script/Engine.Character"
+        },
+        "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "GetPlayerCharacter",
+        "ContextClass": "/Script/Engine.GameplayStatics",
+        "Parameters": [
+          {
+            "Inst": "Self"
+          },
+          {
+            "Inst": "IntConst",
+            "Value": 0
+          }
+        ]
+      },
+      "StatementIndex": 10
+    },
+    {
+      "Inst": "Let",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Object",
+          "PinSubCategory": "Object",
+          "PinSubCategoryObject": "/Script/TBL.TBLCharacterMovement"
+        },
+        "Variable Name": "K2Node_DynamicCast_AsTBLCharacter_Movement"
+      },
+      "Expression": {
+        "Inst": "DynamicCast",
+        "Class": "/Script/TBL.TBLCharacterMovement",
+        "Expression": {
+          "Inst": "Context",
+          "Context": {
+            "Inst": "LocalVariable",
+            "Variable Outer": {
+              "PinCategory": "Object",
+              "PinSubCategory": "Object",
+              "PinSubCategoryObject": "/Script/Engine.Character"
+            },
+            "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue"
+          },
+          "SkipOffsetForNull": 9,
+          "RValuePropertyOuter": "##NOT SERIALIZED##",
+          "RValuePropertyName": "CharacterMovement",
+          "Expression": {
+            "Inst": "InstanceVariable",
+            "Variable Outer": "##NOT SERIALIZED##",
+            "Variable Name": "CharacterMovement"
+          }
+        }
+      },
+      "StatementIndex": 36
+    },
+    {
+      "Inst": "Let",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "K2Node_DynamicCast_bSuccess"
+      },
+      "Expression": {
+        "Inst": "PrimitiveCast",
+        "CastType": "ObjectToBool",
+        "Expression": {
+          "Inst": "LocalVariable",
+          "Variable Outer": {
+            "PinCategory": "Object",
+            "PinSubCategory": "Object",
+            "PinSubCategoryObject": "/Script/TBL.TBLCharacterMovement"
+          },
+          "Variable Name": "K2Node_DynamicCast_AsTBLCharacter_Movement"
+        }
+      },
+      "StatementIndex": 94
+    },
+    {
+      "Inst": "JumpIfNot",
+      "Offset": 1007,
+      "Condition": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "K2Node_DynamicCast_bSuccess"
+      },
+      "StatementIndex": 123
+    },
+    {
+      "Inst": "Let",
+      "Variable": {
+        "Inst": "Context",
+        "Context": {
+          "Inst": "LocalVariable",
+          "Variable Outer": {
+            "PinCategory": "Object",
+            "PinSubCategory": "Object",
+            "PinSubCategoryObject": "/Script/TBL.TBLCharacterMovement"
+          },
+          "Variable Name": "K2Node_DynamicCast_AsTBLCharacter_Movement"
+        },
+        "SkipOffsetForNull": 9,
+        "RValuePropertyOuter": "##NOT SERIALIZED##",
+        "RValuePropertyName": "DashCooldown",
+        "Expression": {
+          "Inst": "InstanceVariable",
+          "Variable Outer": "##NOT SERIALIZED##",
+          "Variable Name": "DashCooldown"
+        }
+      },
+      "Expression": {
+        "Inst": "FloatConst",
+        "Value": 0.0
+      },
+      "StatementIndex": 137
+    },
+    {
+      "Inst": "Jump",
+      "Offset": 1007,
+      "StatementIndex": 182
+    },
+    {
+      "Inst": "Let",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Struct",
+          "PinSubCategory": "Struct",
+          "PinSubCategoryObject": "/Script/InputCore.Key"
+        },
+        "Variable Name": "Temp_struct_Variable"
+      },
+      "Expression": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Struct",
+          "PinSubCategory": "Struct",
+          "PinSubCategoryObject": "/Script/InputCore.Key"
+        },
+        "Variable Name": "K2Node_InputKeyEvent_Key_1"
+      },
+      "StatementIndex": 187
+    },
+    {
+      "Inst": "LetObj",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Object",
+          "PinSubCategory": "Object",
+          "PinSubCategoryObject": "/Script/Engine.Character"
+        },
+        "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue_3"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "GetPlayerCharacter",
+        "ContextClass": "/Script/Engine.GameplayStatics",
+        "Parameters": [
+          {
+            "Inst": "Self"
+          },
+          {
+            "Inst": "IntConst",
+            "Value": 0
+          }
+        ]
+      },
+      "StatementIndex": 214
+    },
+    {
+      "Inst": "Let",
+      "Variable": {
+        "Inst": "Context",
+        "Context": {
+          "Inst": "LocalVariable",
+          "Variable Outer": {
+            "PinCategory": "Object",
+            "PinSubCategory": "Object",
+            "PinSubCategoryObject": "/Script/Engine.Character"
+          },
+          "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue_3"
+        },
+        "SkipOffsetForNull": 9,
+        "RValuePropertyOuter": "##NOT SERIALIZED##",
+        "RValuePropertyName": "CustomTimeDilation",
+        "Expression": {
+          "Inst": "InstanceVariable",
+          "Variable Outer": "##NOT SERIALIZED##",
+          "Variable Name": "CustomTimeDilation"
+        }
+      },
+      "Expression": {
+        "Inst": "FloatConst",
+        "Value": 5.0
+      },
+      "StatementIndex": 240
+    },
+    {
+      "Inst": "Jump",
+      "Offset": 1007,
+      "StatementIndex": 285
+    },
+    {
+      "Inst": "JumpIfNot",
+      "Offset": 402,
+      "Condition": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "Temp_bool_Variable"
+      },
+      "StatementIndex": 290
+    },
+    {
+      "Inst": "LetObj",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Object",
+          "PinSubCategory": "Object",
+          "PinSubCategoryObject": "/Script/Engine.Character"
+        },
+        "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue_2"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "GetPlayerCharacter",
+        "ContextClass": "/Script/Engine.GameplayStatics",
+        "Parameters": [
+          {
+            "Inst": "Self"
+          },
+          {
+            "Inst": "IntConst",
+            "Value": 0
+          }
+        ]
+      },
+      "StatementIndex": 304
+    },
+    {
+      "Inst": "Let",
+      "Variable": {
+        "Inst": "Context",
+        "Context": {
+          "Inst": "Context",
+          "Context": {
+            "Inst": "LocalVariable",
+            "Variable Outer": {
+              "PinCategory": "Object",
+              "PinSubCategory": "Object",
+              "PinSubCategoryObject": "/Script/Engine.Character"
+            },
+            "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue_2"
+          },
+          "SkipOffsetForNull": 9,
+          "RValuePropertyOuter": "##NOT SERIALIZED##",
+          "RValuePropertyName": "CharacterMovement",
+          "Expression": {
+            "Inst": "InstanceVariable",
+            "Variable Outer": "##NOT SERIALIZED##",
+            "Variable Name": "CharacterMovement"
+          }
+        },
+        "SkipOffsetForNull": 9,
+        "RValuePropertyOuter": "##NOT SERIALIZED##",
+        "RValuePropertyName": "MinAnalogWalkSpeed",
+        "Expression": {
+          "Inst": "InstanceVariable",
+          "Variable Outer": "##NOT SERIALIZED##",
+          "Variable Name": "MinAnalogWalkSpeed"
+        }
+      },
+      "Expression": {
+        "Inst": "FloatConst",
+        "Value": 1600.0
+      },
+      "StatementIndex": 330
+    },
+    {
+      "Inst": "Jump",
+      "Offset": 1007,
+      "StatementIndex": 397
+    },
+    {
+      "Inst": "LetObj",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Object",
+          "PinSubCategory": "Object",
+          "PinSubCategoryObject": "/Script/Engine.Character"
+        },
+        "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue_2"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "GetPlayerCharacter",
+        "ContextClass": "/Script/Engine.GameplayStatics",
+        "Parameters": [
+          {
+            "Inst": "Self"
+          },
+          {
+            "Inst": "IntConst",
+            "Value": 0
+          }
+        ]
+      },
+      "StatementIndex": 402
+    },
+    {
+      "Inst": "Let",
+      "Variable": {
+        "Inst": "Context",
+        "Context": {
+          "Inst": "Context",
+          "Context": {
+            "Inst": "LocalVariable",
+            "Variable Outer": {
+              "PinCategory": "Object",
+              "PinSubCategory": "Object",
+              "PinSubCategoryObject": "/Script/Engine.Character"
+            },
+            "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue_2"
+          },
+          "SkipOffsetForNull": 9,
+          "RValuePropertyOuter": "##NOT SERIALIZED##",
+          "RValuePropertyName": "CharacterMovement",
+          "Expression": {
+            "Inst": "InstanceVariable",
+            "Variable Outer": "##NOT SERIALIZED##",
+            "Variable Name": "CharacterMovement"
+          }
+        },
+        "SkipOffsetForNull": 9,
+        "RValuePropertyOuter": "##NOT SERIALIZED##",
+        "RValuePropertyName": "MinAnalogWalkSpeed",
+        "Expression": {
+          "Inst": "InstanceVariable",
+          "Variable Outer": "##NOT SERIALIZED##",
+          "Variable Name": "MinAnalogWalkSpeed"
+        }
+      },
+      "Expression": {
+        "Inst": "FloatConst",
+        "Value": 0.0
+      },
+      "StatementIndex": 428
+    },
+    {
+      "Inst": "Jump",
+      "Offset": 1007,
+      "StatementIndex": 495
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_Not_PreBool_ReturnValue"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "Not_PreBool",
+        "ContextClass": "/Script/Engine.KismetMathLibrary",
+        "Parameters": [
+          {
+            "Inst": "LocalVariable",
+            "Variable Outer": {
+              "PinCategory": "Bool",
+              "PinSubCategory": "Bool"
+            },
+            "Variable Name": "Temp_bool_Variable"
+          }
+        ]
+      },
+      "StatementIndex": 500
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "Temp_bool_Variable"
+      },
+      "Expression": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_Not_PreBool_ReturnValue"
+      },
+      "StatementIndex": 529
+    },
+    {
+      "Inst": "Jump",
+      "Offset": 290,
+      "StatementIndex": 548
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_Not_PreBool_ReturnValue_1"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "Not_PreBool",
+        "ContextClass": "/Script/Engine.KismetMathLibrary",
+        "Parameters": [
+          {
+            "Inst": "LocalVariable",
+            "Variable Outer": {
+              "PinCategory": "Bool",
+              "PinSubCategory": "Bool"
+            },
+            "Variable Name": "Temp_bool_Variable_1"
+          }
+        ]
+      },
+      "StatementIndex": 553
+    },
+    {
+      "Inst": "LetBool",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "Temp_bool_Variable_1"
+      },
+      "Expression": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "CallFunc_Not_PreBool_ReturnValue_1"
+      },
+      "StatementIndex": 582
+    },
+    {
+      "Inst": "JumpIfNot",
+      "Offset": 801,
+      "Condition": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Bool",
+          "PinSubCategory": "Bool"
+        },
+        "Variable Name": "Temp_bool_Variable_1"
+      },
+      "StatementIndex": 601
+    },
+    {
+      "Inst": "LetObj",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Object",
+          "PinSubCategory": "Object",
+          "PinSubCategoryObject": "/Script/Engine.Character"
+        },
+        "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue_1"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "GetPlayerCharacter",
+        "ContextClass": "/Script/Engine.GameplayStatics",
+        "Parameters": [
+          {
+            "Inst": "Self"
+          },
+          {
+            "Inst": "IntConst",
+            "Value": 0
+          }
+        ]
+      },
+      "StatementIndex": 615
+    },
+    {
+      "Inst": "Context",
+      "Context": {
+        "Inst": "Context",
+        "Context": {
+          "Inst": "LocalVariable",
+          "Variable Outer": {
+            "PinCategory": "Object",
+            "PinSubCategory": "Object",
+            "PinSubCategoryObject": "/Script/Engine.Character"
+          },
+          "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue_1"
+        },
+        "SkipOffsetForNull": 9,
+        "RValuePropertyOuter": "##NOT SERIALIZED##",
+        "RValuePropertyName": "CharacterMovement",
+        "Expression": {
+          "Inst": "InstanceVariable",
+          "Variable Outer": "##NOT SERIALIZED##",
+          "Variable Name": "CharacterMovement"
+        }
+      },
+      "SkipOffsetForNull": 18,
+      "RValuePropertyOuter": "#Pointer Error#",
+      "RValuePropertyName": "^^^^^",
+      "Expression": {
+        "Inst": "VirtualFunction",
+        "Function": "SetMovementMode",
+        "Parameters": [
+          {
+            "Inst": "ByteConst",
+            "Value": 5
+          },
+          {
+            "Inst": "ByteConst",
+            "Value": 0
+          }
+        ]
+      },
+      "StatementIndex": 641
+    },
+    {
+      "Inst": "LetObj",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Object",
+          "PinSubCategory": "Object",
+          "PinSubCategoryObject": "/Script/Engine.Character"
+        },
+        "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue_1"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "GetPlayerCharacter",
+        "ContextClass": "/Script/Engine.GameplayStatics",
+        "Parameters": [
+          {
+            "Inst": "Self"
+          },
+          {
+            "Inst": "IntConst",
+            "Value": 0
+          }
+        ]
+      },
+      "StatementIndex": 703
+    },
+    {
+      "Inst": "Let",
+      "Variable": {
+        "Inst": "Context",
+        "Context": {
+          "Inst": "Context",
+          "Context": {
+            "Inst": "LocalVariable",
+            "Variable Outer": {
+              "PinCategory": "Object",
+              "PinSubCategory": "Object",
+              "PinSubCategoryObject": "/Script/Engine.Character"
+            },
+            "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue_1"
+          },
+          "SkipOffsetForNull": 9,
+          "RValuePropertyOuter": "##NOT SERIALIZED##",
+          "RValuePropertyName": "CharacterMovement",
+          "Expression": {
+            "Inst": "InstanceVariable",
+            "Variable Outer": "##NOT SERIALIZED##",
+            "Variable Name": "CharacterMovement"
+          }
+        },
+        "SkipOffsetForNull": 9,
+        "RValuePropertyOuter": "##NOT SERIALIZED##",
+        "RValuePropertyName": "MaxFlySpeed",
+        "Expression": {
+          "Inst": "InstanceVariable",
+          "Variable Outer": "##NOT SERIALIZED##",
+          "Variable Name": "MaxFlySpeed"
+        }
+      },
+      "Expression": {
+        "Inst": "FloatConst",
+        "Value": 1400.0
+      },
+      "StatementIndex": 729
+    },
+    {
+      "Inst": "Jump",
+      "Offset": 1007,
+      "StatementIndex": 796
+    },
+    {
+      "Inst": "LetObj",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Object",
+          "PinSubCategory": "Object",
+          "PinSubCategoryObject": "/Script/Engine.Character"
+        },
+        "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue_1"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "GetPlayerCharacter",
+        "ContextClass": "/Script/Engine.GameplayStatics",
+        "Parameters": [
+          {
+            "Inst": "Self"
+          },
+          {
+            "Inst": "IntConst",
+            "Value": 0
+          }
+        ]
+      },
+      "StatementIndex": 801
+    },
+    {
+      "Inst": "Context",
+      "Context": {
+        "Inst": "Context",
+        "Context": {
+          "Inst": "LocalVariable",
+          "Variable Outer": {
+            "PinCategory": "Object",
+            "PinSubCategory": "Object",
+            "PinSubCategoryObject": "/Script/Engine.Character"
+          },
+          "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue_1"
+        },
+        "SkipOffsetForNull": 9,
+        "RValuePropertyOuter": "##NOT SERIALIZED##",
+        "RValuePropertyName": "CharacterMovement",
+        "Expression": {
+          "Inst": "InstanceVariable",
+          "Variable Outer": "##NOT SERIALIZED##",
+          "Variable Name": "CharacterMovement"
+        }
+      },
+      "SkipOffsetForNull": 18,
+      "RValuePropertyOuter": "#Pointer Error#",
+      "RValuePropertyName": "^^^^^",
+      "Expression": {
+        "Inst": "VirtualFunction",
+        "Function": "SetMovementMode",
+        "Parameters": [
+          {
+            "Inst": "ByteConst",
+            "Value": 1
+          },
+          {
+            "Inst": "ByteConst",
+            "Value": 0
+          }
+        ]
+      },
+      "StatementIndex": 827
+    },
+    {
+      "Inst": "Jump",
+      "Offset": 1007,
+      "StatementIndex": 889
+    },
+    {
+      "Inst": "Let",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Struct",
+          "PinSubCategory": "Struct",
+          "PinSubCategoryObject": "/Script/InputCore.Key"
+        },
+        "Variable Name": "Temp_struct_Variable"
+      },
+      "Expression": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Struct",
+          "PinSubCategory": "Struct",
+          "PinSubCategoryObject": "/Script/InputCore.Key"
+        },
+        "Variable Name": "K2Node_InputKeyEvent_Key_2"
+      },
+      "StatementIndex": 894
+    },
+    {
+      "Inst": "LetObj",
+      "Variable": {
+        "Inst": "LocalVariable",
+        "Variable Outer": {
+          "PinCategory": "Object",
+          "PinSubCategory": "Object",
+          "PinSubCategoryObject": "/Script/Engine.Character"
+        },
+        "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue_3"
+      },
+      "Expression": {
+        "Inst": "CallMath",
+        "Function": "GetPlayerCharacter",
+        "ContextClass": "/Script/Engine.GameplayStatics",
+        "Parameters": [
+          {
+            "Inst": "Self"
+          },
+          {
+            "Inst": "IntConst",
+            "Value": 0
+          }
+        ]
+      },
+      "StatementIndex": 921
+    },
+    {
+      "Inst": "Let",
+      "Variable": {
+        "Inst": "Context",
+        "Context": {
+          "Inst": "LocalVariable",
+          "Variable Outer": {
+            "PinCategory": "Object",
+            "PinSubCategory": "Object",
+            "PinSubCategoryObject": "/Script/Engine.Character"
+          },
+          "Variable Name": "CallFunc_GetPlayerCharacter_ReturnValue_3"
+        },
+        "SkipOffsetForNull": 9,
+        "RValuePropertyOuter": "##NOT SERIALIZED##",
+        "RValuePropertyName": "CustomTimeDilation",
+        "Expression": {
+          "Inst": "InstanceVariable",
+          "Variable Outer": "##NOT SERIALIZED##",
+          "Variable Name": "CustomTimeDilation"
+        }
+      },
+      "Expression": {
+        "Inst": "FloatConst",
+        "Value": 1.0
+      },
+      "StatementIndex": 947
+    },
+    {
+      "Inst": "Jump",
+      "Offset": 1007,
+      "StatementIndex": 992
+    },
+    {
+      "Inst": "Jump",
+      "Offset": 500,
+      "StatementIndex": 997
+    },
+    {
+      "Inst": "Jump",
+      "Offset": 553,
+      "StatementIndex": 1002
+    },
+    {
+      "Inst": "Return",
+      "Expression": {
+        "Inst": "Nothing"
+      },
+      "StatementIndex": 1007
+    },
+    {
+      "Inst": "EndOfScript",
+      "StatementIndex": 1009
+    }
+  ]
+}
